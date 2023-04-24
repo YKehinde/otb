@@ -24,8 +24,13 @@
 
 .hotel-name,
 .overview-title {
-  margin-top: 0;
+  margin: 0;
   color: #17317F;
+}
+
+.hotel-location {
+  color: #C0C0C0;
+  margin-top: 0;
 }
 
 .hotel-image--container {

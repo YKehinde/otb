@@ -3,6 +3,7 @@ import Button from './Button';
 import dayjs from 'dayjs';
 
 import './Tile.css';
+import StarRating from './StarRating';
 
 const Tile = ({ hotel }) => {
   const {
@@ -14,7 +15,8 @@ const Tile = ({ hotel }) => {
     stay_length,
     image,
     departure_location,
-    overview
+    overview,
+    rating
   } = hotel;
 
   return (
@@ -26,7 +28,9 @@ const Tile = ({ hotel }) => {
         <div className="hotel-info--container">
           <h3 className="hotel-name">{name}</h3>
           <p className="hotel-location">{location}</p>
-          <div className="rating"></div>
+          <div className="rating">
+            <StarRating rating={rating} />
+          </div>
           {Object.keys(accommodation).map((key, index) => {
             return (
               <>

@@ -5,8 +5,9 @@
   background-attachment: fixed;
   background-position: top center;
   padding: 30px;
+  display: flex;
 }
 
 .list-container {
-  margin: 30px auto;
+  margin: 0 auto;
 }

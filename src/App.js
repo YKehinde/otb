@@ -22,7 +22,7 @@ const App = () => {
       } else if (sortKey === 'name') {
         return a.name > b.name ? 1 : -1;
       } else if (sortKey === 'rating') {
-        return a.rating - b.rating;
+        return b.rating - a.rating;
       }
     });
     console.log(sortedData);

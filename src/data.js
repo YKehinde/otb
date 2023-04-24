@@ -20,7 +20,7 @@ export const hotelData = [
   {
     id: 2,
     name: 'Aquamarina Golf Hotel',
-    image: 'hotel-image-1.png',
+    image: 'hotel-image-2.png',
     location: 'Costa Adeje, Tenerife',
     rating: 4,
     price: 969.8,
@@ -37,7 +37,7 @@ export const hotelData = [
   {
     id: 3,
     name: 'Las Piramides Resort',
-    image: 'hotel-image-1.png',
+    image: 'hotel-image-3.png',
     location: 'Costa Adeje, Tenerife',
     rating: 3,
     price: 499.9,
