@@ -1,21 +1,38 @@
 .tile {
   width: 650px;
   text-align: left;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+}
+
+.tile p span {
+  font-weight: bold;
+}
+
+.accommodation {
+  display: inline
 }
 
 .hotel-feature {
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: left;
   /* align-items: center;
   margin-bottom: 1rem; */
   width: 650px;
 }
 
+.hotel-name,
+.overview-title {
+  margin-top: 0;
+  color: #17317F;
+}
+
 .hotel-image--container {
   width: 450px;
   text-align: left;
+  display: block;
+  background-color: white;
 }
 
 .hotel-image {
@@ -27,8 +44,13 @@
 .hotel-info--container {
   width: 200px;
   padding: 10px;
+  display: block;
+  background-color: white;
 }
 
 .hotel-description {
   text-align: left;
+  padding: 0 10px;
+  background-color: white;
+  padding-bottom: 30px;
 }

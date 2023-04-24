@@ -1,13 +1,13 @@
-button {
+.tile-button {
   width: 100%;
-  background-color: yellow;
+  background-color: #FEDC07;
   border-radius: 5px;
   border: none;
-  color: blue;
+  color: #17317F;
   padding: 5px;
 }
 
-button h4 {
+.tile-button h4 {
   margin: 4px 0;
 }
 

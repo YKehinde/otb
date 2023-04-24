@@ -1,0 +1,25 @@
+.sort-button {
+  background-color: #fff;
+  color: #17317F;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 200px;
+}
+
+.sort-button span {
+  font-weight: bold;
+}
+
+.sort-button.active {
+  background-color: #17317F;
+  color: #fff;
+}
