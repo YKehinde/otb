@@ -10,7 +10,7 @@ const SortFacet = props => {
         setSortKey(sortKey);
       }}
     >
-      sort <span>{sortKey != 'name' ? `by ${label}` : label}</span>
+      sort <span>{sortKey !== 'name' ? `by ${label}` : label}</span>
     </button>
   );
 };

@@ -1,15 +1,25 @@
 .tile {
-  width: 650px;
+  width: 750px;
   text-align: left;
   margin: 0 auto 30px;
+  font-size: 12px;
 }
 
 .tile p span {
   font-weight: bold;
 }
 
+.rating {
+  margin: 10px 0;
+}
+
 .accommodation {
   display: inline
+}
+.accommodation,
+.arrival,
+.departure-location {
+  margin: 5px 0;
 }
 
 .hotel-feature {
@@ -17,15 +27,21 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: left;
-  /* align-items: center;
-  margin-bottom: 1rem; */
-  width: 650px;
 }
 
 .hotel-name,
 .overview-title {
-  margin: 0;
+  margin: 10px 0;
   color: #17317F;
+  font-size: 18px;
+}
+
+.hotel-details {
+  margin: 20px 0;
+}
+
+.overview-title {
+  padding-bottom: 20px;
 }
 
 .hotel-location {
@@ -34,28 +50,39 @@
 }
 
 .hotel-image--container {
-  width: 450px;
+  position: relative;
+  width: 550px;
   text-align: left;
   display: block;
-  background-color: white;
+  background-color: #fff;
+}
+
+.hotel-image--overlay {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2px 10px;
+  color: #17317F;
 }
 
 .hotel-image {
   width: 100%;
-  height: auto;
-  max-height: 450px;
+  /* height: auto; */
+  /* max-height: 450px; */
+  margin-bottom: -3px;
 }
 
 .hotel-info--container {
   width: 200px;
   padding: 10px;
   display: block;
-  background-color: white;
+  background-color: #fff;
 }
 
 .hotel-description {
   text-align: left;
-  padding: 0 10px;
-  background-color: white;
-  padding-bottom: 30px;
+  padding: 20px 10px;
+  background-color: #fff;
+
 }

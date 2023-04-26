@@ -25,24 +25,25 @@ const App = () => {
         return b.rating - a.rating;
       }
     });
-    console.log(sortedData);
     setMyData(sortedData.map((hotel, i) => <Tile key={i} hotel={hotel} />));
   }, [sortKey]);
 
   return (
     <div className="App">
-      <div className="sort-container">
-        {sortKeys.map((sortObject, i) => (
-          <SortFacet
-            className={sortObject.key === sortKey ? 'active' : ''}
-            key={i}
-            sortKey={sortObject.key}
-            label={sortObject.label}
-            setSortKey={setSortKey}
-          />
-        ))}
+      <div className="page-container">
+        <div className="sort-container">
+          {sortKeys.map((sortObject, i) => (
+            <SortFacet
+              className={sortObject.key === sortKey ? 'active' : ''}
+              key={i}
+              sortKey={sortObject.key}
+              label={sortObject.label}
+              setSortKey={setSortKey}
+            />
+          ))}
+        </div>
+        <div className="list-container">{myData}</div>
       </div>
-      <div className="list-container">{myData}</div>
     </div>
   );
 };
